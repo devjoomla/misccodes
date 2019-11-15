@@ -1,0 +1,4 @@
+$nxt = strpos(strip_tags(JCalProHelperFilter::purify($description),'<p>'),'<p',300);
+
+                                echo substr(strip_tags(JCalProHelperFilter::purify($description),'<p>'),0,$nxt);
+								echo "<br/><br/><a href='".$event->href."' class='btn_sml'>Read more</a>";
